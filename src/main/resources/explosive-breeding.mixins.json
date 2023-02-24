@@ -3,7 +3,7 @@
 	"package": "top.offsetmonkey538.explosivebreeding.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+		"AnimalEntityMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
