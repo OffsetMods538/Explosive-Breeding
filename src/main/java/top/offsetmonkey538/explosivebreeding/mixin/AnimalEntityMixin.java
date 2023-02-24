@@ -16,6 +16,9 @@ public abstract class AnimalEntityMixin {
             method = "breed"
     )
     private void explosivebreeding$makeBredAnimalsExplode(ServerWorld world, AnimalEntity other, CallbackInfo ci) {
-        world.createExplosion(null, null, null, other.getPos(), 4, false, World.ExplosionSourceType.MOB);
+        final AnimalEntity thisEntity = ((AnimalEntity) (Object) this);
+
+
+        world.createExplosion(null, null, null, other.getPos(), (thisEntity.getHeight() + thisEntity.getWidth()) * 2, false, World.ExplosionSourceType.MOB);
     }
 }
