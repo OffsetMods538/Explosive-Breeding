@@ -18,7 +18,17 @@ public abstract class AnimalEntityMixin {
     private void explosivebreeding$makeBredAnimalsExplode(ServerWorld world, AnimalEntity other, CallbackInfo ci) {
         final AnimalEntity thisEntity = ((AnimalEntity) (Object) this);
 
+        final boolean originalThisEntityInvulnerability = thisEntity.isInvulnerable();
+        final boolean originalOtherEntityInvulnerability = other.isInvulnerable();
+
+        thisEntity.setInvulnerable(true);
+        other.setInvulnerable(true);
+
 
         world.createExplosion(null, null, null, other.getPos(), (thisEntity.getHeight() + thisEntity.getWidth()) * 2, false, World.ExplosionSourceType.MOB);
+
+
+        thisEntity.setInvulnerable(originalThisEntityInvulnerability);
+        other.setInvulnerable(originalOtherEntityInvulnerability);
     }
 }
