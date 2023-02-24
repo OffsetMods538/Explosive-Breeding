@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "${modId}",
+	"version": "${modVersion}",
+	"name": "${modName}",
+	"description": "${modDescription}",
+	"authors": [
+		"OffsetMonkey538"
+	],
+	"contact": {
+		"sources": "https://github.offsetmonkey538.top/${modId}"
+	},
+	"license": "${modLicense}",
+	"icon": "assets/${modId}/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"${mavenGroup}.${modMainClass}"
+		],
+		"client": [
+			"${mavenGroup}.${modMainClass}Client"
+		]
+	},
+	"mixins": [
+		"${modId}.mixins.json",
+		{
+			"config": "${modId}.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+
+	},
+	"suggests": {
+
+	}
+}
