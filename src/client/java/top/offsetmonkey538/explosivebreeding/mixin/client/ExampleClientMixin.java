@@ -1,4 +1,4 @@
-package top.offsetmonkey538.templatemod.mixin.client;
+package top.offsetmonkey538.explosivebreeding.mixin.client;
 
 import net.minecraft.client.MinecraftClient;
 import org.spongepowered.asm.mixin.Mixin;

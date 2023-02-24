@@ -1,8 +1,8 @@
-package top.offsetmonkey538.templatemod;
+package top.offsetmonkey538.explosivebreeding;
 
 import net.fabricmc.api.ClientModInitializer;
 
-public class TemplateModClient implements ClientModInitializer {
+public class ExplosiveBreedingClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
 		// This entrypoint is suitable for setting up client-specific logic, such as rendering.

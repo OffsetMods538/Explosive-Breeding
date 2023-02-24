@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "top.offsetmonkey538.templatemod.mixin.client",
+	"package": "top.offsetmonkey538.explosivebreeding.mixin.client",
 	"compatibilityLevel": "JAVA_17",
 	"client": [
 		"ExampleClientMixin"
