@@ -1,35 +1,35 @@
 {
 	"schemaVersion": 1,
-	"id": "${modId}",
+	"id": "explosive-breeding",
 	"version": "${modVersion}",
-	"name": "${modName}",
-	"description": "${modDescription}",
+	"name": "Explosive Breeding",
+	"description": "Animals explode when bred",
 	"authors": [
 		"OffsetMonkey538"
 	],
 	"contact": {
-		"sources": "https://github.offsetmonkey538.top/${modId}"
+		"sources": "https://github.com/OffsetMods538/Explosive-Breeding"
 	},
-	"license": "${modLicense}",
-	"icon": "assets/${modId}/icon.png",
+	"license": "MIT",
+	"icon": "assets/explosive-breeding/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"${mavenGroup}.${modMainClass}"
+			"top.offsetmonkey538.explosivebreeding.ExplosiveBreeding"
 		],
 		"client": [
-			"${mavenGroup}.${modMainClass}Client"
+			"top.offsetmonkey538.explosivebreeding.ExplosiveBreedingClient"
 		]
 	},
 	"mixins": [
-		"${modId}.mixins.json",
+		"explosive-breeding.mixins.json",
 		{
-			"config": "${modId}.client.mixins.json",
+			"config": "explosive-breeding.client.mixins.json",
 			"environment": "client"
 		}
 	],
 	"depends": {
-
+		"minecraft": "${supportedMinecraftVersions}"
 	},
 	"suggests": {
 
